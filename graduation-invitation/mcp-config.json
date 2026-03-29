@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "figma": {
+      "url": "https://mcp.figma.com/sse",
+      "name": "figma-mcp",
+      "enabled": true,
+      "features": ["design-generation", "component-library", "prototyping"]
+    },
+    "canva": {
+      "url": "https://mcp.canva.com/sse",
+      "name": "canva-mcp",
+      "enabled": true,
+      "features": ["graphic-design", "templates", "social-media"]
+    }
+  },
+  "visualOptimization": {
+    "autoGenerate": true,
+    "styleGuide": "elegant-modern",
+    "colorScheme": "navy-gold-white",
+    "responsiveBreakpoints": [320, 768, 1024, 1440]
+  }
+}

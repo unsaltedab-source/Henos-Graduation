@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Ceremony 2025 — Invitation</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+</head>
+<body class="bg-navy text-cream">
+    <header class="hero-section" id="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Class of 2025</p>
+            <div class="bell-container">
+                <svg id="graduation-bell" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <path d="M32 6C32 6 16 14 16 32v14h32V32C48 14 32 6 32 6Z" fill="#c9a84c" />
+                    <circle cx="32" cy="6" r="3" fill="#e4c46a" />
+                </svg>
+            </div>
+            <h1>You're Invited</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Join us as we celebrate the remarkable achievements of the graduating class at the <em class="highlight">University of Bellhaven</em>.</p>
+            <div class="cta-group">
+                <button id="open-invitation" class="primary-btn">View Invitation</button>
+                <a href="#rsvp" class="secondary-btn">RSVP Now</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll</p>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Invitation Modal Overlay -->
+        <div id="invitation-overlay" class="overlay hidden">
+            <div id="invitation-modal" class="modal">
+                <button class="close-modal" aria-label="Close invitation">&times;</button>
+                <div class="invitation-card">
+                    <div class="crest-container">
+                        <div class="line"></div>
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <polygon points="16,2 22,12 30,12 24,19 26,28 16,22 6,28 8,19 2,12 10,12" fill="#c9a84c" />
+                        </svg>
+                        <div class="line"></div>
+                    </div>
+                    <p class="university-name">University of Bellhaven</p>
+                    <p class="invitation-text">The President, Faculty, and Board of Trustees cordially request the pleasure of your company at the</p>
+                    <h2>Commencement Ceremony</h2>
+                    <p class="italic gold">for the Graduating Class of 2025</p>
+
+                    <div class="gold-divider"></div>
+
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">Date</span>
+                            <span class="value">Saturday</span>
+                            <span class="sub">June 14, 2025</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Time</span>
+                            <span class="value">10:00 AM</span>
+                            <span class="sub">Doors open at 9:00 AM</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Venue</span>
+                            <span class="value">Grand Hall</span>
+                            <span class="sub">Bellhaven Campus</span>
+                        </div>
+                    </div>
+
+                    <div class="gold-divider"></div>
+
+                    <div class="note-box">
+                        <p class="label">Kindly note</p>
+                        <p>Academic regalia is requested for all graduates. Guests are invited to dress in <em>formal or semi-formal</em> attire. Seating is limited to four guests per graduate.</p>
+                    </div>
+
+                    <p class="reception-note">A champagne reception will follow the ceremony in the Bellhaven Courtyard.</p>
+
+                    <p class="footer-est">Est. 1892 — Bellhaven University</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="details" class="details-section">
+            <div class="container">
+                <p class="eyebrow gold">Ceremony Details</p>
+                <h2>Mark Your Calendar</h2>
+                <div class="gold-line"></div>
+                <div class="details-cards-container">
+                    <div class="detail-card">
+                        <div class="icon-circle">📅</div>
+                        <p class="label">Date</p>
+                        <p class="value">Saturday, June 14</p>
+                        <p class="sub">2025</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="icon-circle">⏰</div>
+                        <p class="label">Ceremony Begins</p>
+                        <p class="value">10:00 AM</p>
+                        <p class="sub">Doors open at 9:00 AM</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="icon-circle">📍</div>
+                        <p class="label">Venue</p>
+                        <p class="value">Grand Hall</p>
+                        <p class="sub">Bellhaven Campus</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="icon-circle">🥂</div>
+                        <p class="label">Reception</p>
+                        <p class="value">12:00 PM</p>
+                        <p class="sub">Bellhaven Courtyard</p>
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    <span class="quote-mark">&ldquo;</span>
+                    <p>The tassel was worth the hassle. Today, we celebrate not just an ending, but a magnificent beginning.</p>
+                    <footer>Bellhaven University · 2025</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="rsvp" class="rsvp-section">
+            <div class="container">
+                <p class="eyebrow gold">Your Response</p>
+                <h2>RSVP</h2>
+                <div class="gold-line"></div>
+                <p class="rsvp-note">Kindly reply by <strong class="gold">May 30, 2025</strong>. We look forward to celebrating with you.</p>
+
+                <form id="rsvp-form">
+                    <div class="form-group">
+                        <p class="label">Will you attend? <span class="required">*</span></p>
+                        <div class="attendance-toggle">
+                            <button type="button" class="toggle-btn" data-value="yes">Joyfully Accepts</button>
+                            <button type="button" class="toggle-btn" data-value="no">Regretfully Declines</button>
+                            <input type="hidden" name="attendance" id="attendance-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-inputs">
+                        <div class="input-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Alexandra Bennett">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="alexandra@example.com">
+                        </div>
+                        <div class="input-group" id="guests-group">
+                            <label for="guests">Number of Guests (max 4)</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message (optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Share a message with the graduate..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" disabled>Send RSVP</button>
+                </form>
+
+                <div id="success-message" class="hidden">
+                    <div class="check-icon">✓</div>
+                    <h3>Thank You!</h3>
+                    <p id="feedback-text"></p>
+                    <div class="gold-line"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-divider">
+            <div class="line"></div>
+            <div class="diamond"></div>
+            <div class="line"></div>
+        </div>
+        <p>University of Bellhaven · Class of 2025</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/form-handler.js"></script>
+</body>
+</html>
